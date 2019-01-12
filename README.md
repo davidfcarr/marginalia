@@ -1,4 +1,4 @@
-The Marginalia plugin lets you format content with notes or comments aligned float: left or float:right to the main body of your content.
+The Marginalia plugin for WordPress lets you format content with notes or comments aligned float: left or float:right to the main body of your content.
 
 *marginalia (n)*: notes in the margin of a book, manuscript, or letter
 
