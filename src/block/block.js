@@ -43,37 +43,27 @@ attributes: {
 
     edit: function( props ) {	
 
-	const { attributes, className, setAttributes } = props;
-	const marginstyle = {};
-	marginstyle['width'] = attributes.width + 'em';
-	/*
-	const allblocks = wp.blocks.getBlockTypes();
-	
-	var filtered = allblocks.map(isMe);
-		
-	function isMe(value) {
-		if(value.name == 'davidfcarr/marginalia')
-			return null;
-		return value.name;
-	}
-	*/
-	
+	const { attributes, className, setAttributes, isSelected } = props;
+	const marginstyle = {width: attributes.width + 'em'};
+	const innerstyle = {marginLeft: (attributes.width + 2) + 'em'};
+
 	return (
 		<Fragment>
 		<Inspector { ...props } />
-<div className={className}><small>Marginal Note (float: {attributes.position})</small><div style={marginstyle} className="marginalia">
+<div className={className} ><div class="warnifnested">Nested inside another Marginalia block</div>
+		<div style={marginstyle} class="marginalia">
 			<RichText
                 tagName="p"
-                className={className}
+                className="marginaliaNote"
                 value={attributes.content}
                 onChange={(content) => setAttributes({ content })}
             />
-</div>
-		<div className="marginaliaMain"><small>Main Content</small>
+	</div>
+	<small>(float:{attributes.position})</small>
+		<div className="marginaliaMain" style={innerstyle}>
 	<InnerBlocks />
 	</div>
 	
-	<div className="marginaliaEnd">Marginalia block end</div>
 	</div>
 		</Fragment>
 		);

@@ -7,7 +7,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 5.0
 Requires PHP: 5.3
 Tested up to: 5.0.3
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 
 Creates a Gutenberg block for marginal notes displayed float right or float left relative to other content. Useful for podcast or webcast show notes or annotated transcripts.
 
@@ -25,7 +25,7 @@ This plugin takes advantage of the Gutenberg editor that became the new standard
 
 This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block).
 
-Header image: [Rafel Bosch, public domain, via Wikimedia Commons]https://commons.wikimedia.org/wiki/File:Martirologi.jpg)
+Header image: [Rafel Bosch, public domain, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Martirologi.jpg)
 
 == Installation ==
 
@@ -40,7 +40,7 @@ Header image: [Rafel Bosch, public domain, via Wikimedia Commons]https://commons
 
 == Credits ==
 
-    Marginalia
+    My Marginalia
     Copyright (C) 2019 David F. Carr
 
     This program is free software: you can redistribute it and/or modify

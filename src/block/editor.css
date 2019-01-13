@@ -4,10 +4,19 @@
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
-.wp-block-davidfcarr-marginalia {
-  border-bottom: thin dotted #AAA; }
+.editor-block-list__block-edit .wp-block-davidfcarr-marginalia {
+  border: thin solid yellow; }
 
-.marginaliaEnd {
-  background-color: #EEE;
-  text-align: center;
-  font-size: small; }
+.warnifnested {
+  display: none; }
+
+.wp-block-davidfcarr-marginalia .wp-block-davidfcarr-marginalia .warnifnested {
+  display: block;
+  color: red;
+  font-weight: bold; }
+
+.marginaliaNote {
+  border: thin solid #eee; }
+
+.marginaliaMain {
+  margin-top: -5em; }
