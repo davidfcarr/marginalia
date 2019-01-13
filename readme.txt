@@ -1,4 +1,4 @@
-=== Marginalia ===
+=== My Marginalia ===
 Contributors: davidfcarr
 Tags: gutenberg, block, formatting, show notes, annotation, float, timestamp
 Donate link: http://rsvpmaker.com/
@@ -13,7 +13,7 @@ Creates a Gutenberg block for marginal notes displayed float right or float left
 
 == Description ==
 
-The Marginalia plugin for WordPress lets you format content with notes or comments aligned float:left or float:right to the main body of your content.
+The My Marginalia plugin for WordPress lets you format content with notes or comments aligned float:left or float:right to the main body of your content.
 
 *marginalia (n)*: notes in the margin of a book, manuscript, or letter
 
