@@ -14,7 +14,7 @@ const { Fragment } = wp.element;
 const { InnerBlocks, BlockControls } = wp.editor;
 const { Component } = wp.element;
 const { InspectorControls } = wp.editor;
-const { PanelBody, RangeControl, SelectControl, FormatToolbar } = wp.components;
+const { PanelBody, RangeControl, Button, SelectControl, FormatToolbar } = wp.components;
 
 registerBlockType( 'davidfcarr/marginalia', {
 	title: ( 'Marginalia' ), // Block title.
@@ -33,11 +33,11 @@ attributes: {
         },
 	position: {
 		type: 'string',
-		default: 'left',
+		default: marginalia.position,
 	},
 	width: {
 		type: 'number',
-		default: 8,
+		default: parseInt(marginalia.width),
 	},
 },
 
@@ -136,4 +136,13 @@ class Inspector extends Component {
 			</InspectorControls>
 		);
 	}
+}
+
+function setMarginaliaWidth( width ) {
+	marginalia.width = width;
+	alert('New default width: '+width);
+    xhr = new XMLHttpRequest();
+	xhr.open('POST', ajaxurl);
+	xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.send(encodeURI('action=set_marginalia_default&width=' + width));
 }
