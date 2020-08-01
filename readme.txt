@@ -6,8 +6,8 @@ License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 5.0
 Requires PHP: 5.3
-Tested up to: 5.2.2
-Stable tag: 1.0.4
+Tested up to: 5.5
+Stable tag: 1.0.5
 
 Creates a Gutenberg block for marginal notes displayed float right or float left relative to other content. Useful for podcast or webcast show notes or annotated transcripts.
 
@@ -56,6 +56,10 @@ Header image: [Rafel Bosch, public domain, via Wikimedia Commons](https://common
     See the GNU General Public License at <http://www.gnu.org/licenses/gpl-2.0.html>.
 
 == Changelog ==
+
+= 1.0.5 =
+
+* Updated NPM modules
 
 = 1.0.2 =
 
